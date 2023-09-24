@@ -14,29 +14,27 @@
     padding: 10px;
   }
 
-  nav ul {
+  /* Hamburger menu button */
+  .menu-toggle {
+    display: none; /* Initially hide the button for larger screens */
+    cursor: pointer;
+  }
+
+  /* Navigation menu */
+  .nav-menu {
+    display: block;
+  }
+
+  .nav-menu ul {
     list-style-type: none;
-    padding: 22px;
   }
 
-  nav li {
-    display: inline;
-    margin-right: 20px;
-  }
-
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .logo {
-    padding-left: 2em;
+  .nav-menu li {
+    margin-bottom: 10px;
   }
 
   /* Style the hero section */
   .hero {
-    background-image: url("landscape-image.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;

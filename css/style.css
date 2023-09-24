@@ -7,7 +7,7 @@
 /* Style the header */
 header {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   background-color: rgb(124 132 119);
   color: #fff;
   padding: 10px;
@@ -16,8 +16,27 @@ header {
 }
 
 header h1 {
-  font-size: 36px;
-  padding: 10px;
+  display: none;
+}
+
+.menu-toggle {
+  display: block; /* Show the button for smaller screens */
+  margin: auto;
+}
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.nav-menu {
+  display: none; /* Initially hide the navigation menu for smaller screens */
+}
+
+.nav-menu.active {
+  display: block; /* Show the navigation menu when the button is clicked */
 }
 
 nav ul {
@@ -38,7 +57,6 @@ nav a {
 
 /* Style the hero section */
 .hero {
-  background-image: url("landscape-image.jpg");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -57,7 +75,7 @@ nav a {
 
 .button {
   position: absolute; /* Position the button absolutely within the hero section */
-  top: 60%; /* Position the button 50% from the top */
+  top: 42%; /* Position the button 50% from the top */
   left: 50%; /* Position the button 50% from the left */
   transform: translate(
     -50%,
