@@ -1,0 +1,130 @@
+@media screen and (min-width: 60em) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(124 132 119);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 5);
+  }
+
+  header h1 {
+    font-size: 36px;
+    padding: 10px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 22px;
+  }
+
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .logo {
+    padding-left: 2em;
+  }
+
+  /* Style the hero section */
+  .hero {
+    background-image: url("landscape-image.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+  }
+
+  .hero img {
+    max-width: 100%;
+  }
+
+  .hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  .button {
+    position: absolute; /* Position the button absolutely within the hero section */
+    top: 60%; /* Position the button 50% from the top */
+    left: 50%; /* Position the button 50% from the left */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Center the button horizontally and vertically */
+    background-color: #007bff; /* Button background color */
+    padding: 15px 30px; /* Button padding */
+    border-radius: 5px; /* Rounded corners for the button */
+  }
+  .button a {
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Hover effect for the button */
+  .button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+  }
+
+  /* Style the Landscaping Services section */
+  .landscaping-services {
+    background-color: #eaf6f6;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .landscaping-services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  /* Style individual landscaping service items */
+  .landscaping-services .service {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .landscaping-services .service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  /* Style the gallery section (customize further with your images) */
+
+  /* Style the footer */
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .social img {
+    width: 30px;
+    height: 30px;
+  }
+  footer p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+}
