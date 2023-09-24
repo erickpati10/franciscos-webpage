@@ -7,8 +7,7 @@
 /* Style the header */
 header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* background-color: rgb(124 132 119); */
+  grid-template-columns: 2fr auto;
   color: #39aa3b;
   padding: 10px;
   text-align: center;
@@ -22,6 +21,7 @@ header h1 {
 .menu-toggle {
   display: block; /* Show the button for smaller screens */
   margin: auto;
+  padding: 0 2rem;
 }
 .bar {
   width: 25px;
