@@ -4,8 +4,10 @@
   padding: 0;
 }
 
-/* Style the header */
 header {
+  position: fixed;
+  background-color: white;
+  width: 100%;
   display: grid;
   grid-template-columns: 2fr auto;
   color: #39aa3b;
@@ -19,10 +21,11 @@ header h1 {
 }
 
 .menu-toggle {
-  display: block; /* Show the button for smaller screens */
+  display: block;
   margin: auto;
   padding: 0 2rem;
 }
+
 .bar {
   width: 25px;
   height: 3px;
@@ -30,13 +33,31 @@ header h1 {
   margin: 4px 0;
   transition: 0.4s;
 }
-
+.nav-link {
+  transition: 0.7s ease-out;
+}
+.nav-menu.active {
+  left: 0;
+}
+.nav-link:hover {
+  color: dodgerblue;
+  font-size: 30px;
+}
 .nav-menu {
-  display: none; /* Initially hide the navigation menu for smaller screens */
+  position: absolute;
+  left: -100%;
+  top: 100px;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+.nav-menu {
+  display: none;
 }
 
 .nav-menu.active {
-  display: block; /* Show the navigation menu when the button is clicked */
+  display: block;
 }
 
 nav ul {
@@ -45,8 +66,7 @@ nav ul {
 }
 
 nav li {
-  display: inline;
-  margin-right: 20px;
+  padding: 7px;
 }
 
 nav a {
