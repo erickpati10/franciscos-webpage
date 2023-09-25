@@ -21,6 +21,7 @@
 
   /* Navigation menu */
   .nav-menu {
+    position: initial;
     display: block;
   }
 
@@ -30,6 +31,10 @@
 
   nav li {
     display: inline;
+  }
+
+  nav a {
+    font-size: 20px;
   }
 
   .hero {
@@ -100,7 +105,9 @@
     margin-bottom: 10px;
   }
 
-  /* Style the gallery section (customize further with your images) */
+  /* .service img {
+    width: 280px;
+  } */
 
   /* Style the footer */
   footer {
@@ -122,5 +129,81 @@
   footer a {
     text-decoration: none;
     color: white;
+  }
+
+  /* ++++++++++++++++++++++++ contact ++++++++++++++++++++++++++ */
+
+  /* Contact Section Styles */
+  .contact {
+    background-color: #f9f9f9;
+    padding: 10%;
+    text-align: center;
+  }
+
+  .contact h2 {
+    color: #39aa3b;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  /* Contact Form Styles */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  textarea {
+    resize: vertical;
+    height: 150px;
+  }
+
+  button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  /* Contact Information Styles */
+  .contact-info {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .contact-info p {
+    margin: 5px 0;
+  }
+
+  .contact-info strong {
+    font-weight: bold;
   }
 }

@@ -23,7 +23,7 @@ header h1 {
 .menu-toggle {
   display: block;
   margin: auto;
-  padding: 0 2rem;
+  padding: 0 3rem;
 }
 
 .bar {
@@ -31,7 +31,8 @@ header h1 {
   height: 3px;
   background-color: #39aa3b;
   margin: 4px 0;
-  transition: 0.4s;
+
+  /* transition: 0.4s; */
 }
 .nav-link {
   transition: 0.7s ease-out;
@@ -95,14 +96,14 @@ nav a {
 
 .button {
   position: absolute; /* Position the button absolutely within the hero section */
-  top: 42%; /* Position the button 50% from the top */
+  top: 33%; /* Position the button 50% from the top */
   left: 50%; /* Position the button 50% from the left */
   transform: translate(
     -50%,
     -50%
   ); /* Center the button horizontally and vertically */
   background-color: #007bff; /* Button background color */
-  padding: 15px 30px; /* Button padding */
+  padding: 10px 20px; /* Button padding */
   border-radius: 5px; /* Rounded corners for the button */
 }
 .button a {
@@ -122,6 +123,7 @@ nav a {
 }
 
 .landscaping-services h2 {
+  color: #39aa3b;
   font-size: 36px;
   margin-bottom: 20px;
 }
@@ -140,6 +142,7 @@ nav a {
 .landscaping-services .service h3 {
   font-size: 24px;
   margin-bottom: 10px;
+  color: #39aa3b;
 }
 
 /* Style the footer */
