@@ -13,28 +13,34 @@
     padding: 10px;
   }
 
-  /* Hamburger menu button */
-  .menu-toggle {
-    display: none; /* Initially hide the button for larger screens */
-    cursor: pointer;
+  /* ####################Hamburger menu button ######################*/
+  a {
+    color: #39aa3b;
   }
 
-  /* Navigation menu */
+  .navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    margin: auto;
+  }
+
   .nav-menu {
-    position: initial;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    position: revert;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    font-size: 25px;
   }
 
-  .nav-menu li {
-    margin-bottom: 10px;
-  }
-
-  nav li {
-    display: inline;
-  }
-
-  nav a {
-    font-size: 20px;
+  .hamburger {
+    display: none;
+    cursor: pointer;
   }
 
   .hero {
@@ -47,6 +53,7 @@
 
   .hero img {
     max-width: 100%;
+    object-fit: cover;
   }
 
   .hero h2 {
@@ -55,85 +62,73 @@
   }
 
   .button {
-    position: absolute; /* Position the button absolutely within the hero section */
-    top: 60%; /* Position the button 50% from the top */
-    left: 50%; /* Position the button 50% from the left */
-    transform: translate(
-      -50%,
-      -50%
-    ); /* Center the button horizontally and vertically */
-    background-color: #007bff; /* Button background color */
-    padding: 15px 30px; /* Button padding */
-    border-radius: 5px; /* Rounded corners for the button */
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 17px;
   }
   .button a {
-    color: white;
+    display: inline-block;
+    padding: 12px 31px;
+    background: black;
+    color: #fff;
+    font-size: 60px;
+    margin: 40px 0;
+    text-transform: uppercase;
+    border: 2px solid rgb(255, 255, 255);
     text-decoration: none;
+    box-shadow: 0 2px 5px 0 #000;
+    border-radius: 15px;
   }
 
-  /* Hover effect for the button */
-  .button:hover {
-    background-color: #0056b3; /* Button background color on hover */
+  .button h2 {
+    font-size: 60px;
   }
 
-  /* Style the Landscaping Services section */
-  .landscaping-services {
-    background-color: #eaf6f6;
-    padding: 50px 0;
-    text-align: center;
-  }
-
-  .landscaping-services h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-
-  /* Style individual landscaping service items */
-  .landscaping-services .service {
-    margin: 0 auto;
-    max-width: 400px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .landscaping-services .service h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-
-  /* .service img {
-    width: 280px;
-  } */
-
-  /* Style the footer */
+  /* ########################### footer ######################*/
   footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
   }
+  .social {
+    margin: auto;
+  }
+  .social h5,
+  .contact-footer h5 {
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
   .social img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 50px;
   }
   footer p {
+    margin: auto;
     font-size: 16px;
-    margin-top: 10px;
   }
-  footer a {
-    text-decoration: none;
-    color: white;
+
+  .contact-footer a {
+    padding: 8px;
+  }
+  .social a {
+    padding: 12px;
+  }
+
+  .contact-footer p {
+    padding: 10px;
+  }
+
+  footer img {
+    width: 40px;
   }
 
   /* ++++++++++++++++++++++++ contact ++++++++++++++++++++++++++ */
 
-  /* Contact Section Styles */
   .contact {
     background-color: #f9f9f9;
     padding: 10%;
@@ -205,5 +200,86 @@
 
   .contact-info strong {
     font-weight: bold;
+  }
+
+  /* ################Services##################### */
+
+  .landscaping-services {
+    display: inline-flex;
+    padding: 50px 0;
+    text-align: center;
+    margin: 15px;
+  }
+
+  .landscaping-services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .landscaping-services .service {
+    margin: 0 auto;
+    color: #10112c;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #94cf91;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 5);
+    background-image: url("../images/Gallery-5.jpg");
+    background-size: cover;
+    background-blend-mode: lighten;
+  }
+
+  .landscaping-services .service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #4f130b;
+  }
+
+  /* ################Gallery##################### */
+
+  .gallery img {
+    width: 100%;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+  }
+  .gallery .heading {
+    width: 50%;
+    padding-bottom: 50px;
+  }
+  .gallery .heading h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+  }
+
+  .gallery .heading h3 span {
+    font-weight: 100;
+  }
+
+  .gallery .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .gallery .container .box {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+  }
+
+  .gallery .box img {
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
   }
 }

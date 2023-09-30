@@ -1,4 +1,3 @@
-/* Reset some default styles */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +8,7 @@ header {
   background-color: white;
   width: 100%;
   display: grid;
-  grid-template-columns: 2fr auto;
+  grid-template-columns: 1fr 1fr;
   color: #39aa3b;
   padding: 10px;
   text-align: center;
@@ -20,7 +19,64 @@ header h1 {
   display: none;
 }
 
-.menu-toggle {
+/* #########################Hamburger menu##################### */
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(42, 42, 82);
+}
+
+.hambuger {
+  display: block;
+}
+
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 100px;
+  gap: 0;
+  flex-direction: column;
+  background-color: #262626;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+.nav-item {
+  margin: 16px 0;
+}
+.nav-menu.active {
+  left: 0;
+}
+
+.nav-link {
+  transition: 0.7s ease-out;
+}
+
+.nav-link:hover {
+  color: rgb(19, 219, 96);
+  font-size: 30px;
+}
+/* .menu-toggle {
   display: block;
   margin: auto;
   padding: 0 3rem;
@@ -32,7 +88,6 @@ header h1 {
   background-color: #39aa3b;
   margin: 4px 0;
 
-  /* transition: 0.4s; */
 }
 .nav-link {
   transition: 0.7s ease-out;
@@ -74,9 +129,9 @@ nav a {
   color: #39aa3b;
   text-decoration: none;
   font-weight: bold;
-}
+} */
 
-/* Style the hero section */
+/* ######################## hero section ################*/
 .hero {
   background-size: cover;
   background-position: center;
@@ -87,37 +142,39 @@ nav a {
 
 .hero img {
   max-width: 100%;
+  object-fit: cover;
 }
 
 .hero h2 {
   font-size: 48px;
   margin-bottom: 20px;
 }
-
 .button {
-  position: absolute; /* Position the button absolutely within the hero section */
-  top: 33%; /* Position the button 50% from the top */
-  left: 50%; /* Position the button 50% from the left */
-  transform: translate(
-    -50%,
-    -50%
-  ); /* Center the button horizontally and vertically */
-  background-color: #007bff; /* Button background color */
-  padding: 10px 20px; /* Button padding */
-  border-radius: 5px; /* Rounded corners for the button */
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.button h2,
+h3 {
+  color: #39aa3b;
 }
 .button a {
-  color: white;
+  display: inline-block;
+  padding: 12px 31px;
+  background: black;
+  color: #fff;
+  font-size: 15px;
+  margin: 50px 0 0 0;
+  text-transform: uppercase;
+  border: 2px solid rgb(255, 255, 255);
   text-decoration: none;
+  box-shadow: 0 2px 5px 0 #000;
 }
 
-/* Hover effect for the button */
-.button:hover {
-  background-color: #0056b3; /* Button background color on hover */
-}
+/* ################Services##################### */
 
 .landscaping-services {
-  background-color: #eaf6f6;
+  /* background-color: #eaf6f6; */
   padding: 50px 0;
   text-align: center;
 }
@@ -130,13 +187,17 @@ nav a {
 
 .landscaping-services .service {
   margin: 0 auto;
+  color: #10112c;
   max-width: 400px;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
   margin-bottom: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #94cf91;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 5);
+  background-image: url("../images/Gallery-5.jpg");
+  background-size: cover;
+  background-blend-mode: lighten;
 }
 
 .landscaping-services .service h3 {
@@ -145,10 +206,136 @@ nav a {
   color: #39aa3b;
 }
 
+/* #################### Contact ################### */
+
+.container {
+  padding: 120px 10px;
+}
+
+.contact {
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #39aa3b;
+  font-size: 36px;
+}
+
+.contact p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Contact Information Styles */
+.contact-info {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.contact-info strong {
+  font-weight: bold;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #0a0909;
+  padding: 5px;
+}
+
+/* ######################Gallery#################### */
+
+.gallery img {
+  width: 100%;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+}
+
+.gallery .heading {
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+.gallery .heading h3 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #222;
+}
+
+.gallery .heading h3 span {
+  font-weight: 100;
+}
+
+.gallery .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gallery .container .box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.gallery .box img {
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+/* ########################footer####################### */
+
 /* Style the footer */
 footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   background-color: #333;
   color: #fff;
   text-align: center;
@@ -159,11 +346,25 @@ footer {
   height: 30px;
   margin-top: 10px;
 }
-footer p {
-  font-size: 12px;
-  margin-top: 10px;
-}
-footer a {
+
+.contact-footer a {
   text-decoration: none;
-  color: white;
+  color: #fff;
+  padding: 5px;
+}
+.contact-footer h5,
+.social h5 {
+  font-size: 20px;
+  padding: 7px;
+}
+
+.social a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+}
+
+.social p,
+.contact-footer p {
+  padding: 7px;
 }
