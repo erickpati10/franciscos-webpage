@@ -1,14 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 header {
   position: fixed;
   background-color: white;
+  top: 0;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   color: #39aa3b;
   padding: 10px;
   text-align: center;
@@ -19,7 +21,7 @@ header h1 {
   display: none;
 }
 
-/* #########################Hamburger menu##################### */
+/* ######################### Hamburger menu ##################### */
 li {
   list-style: none;
 }
@@ -76,62 +78,8 @@ a {
   color: rgb(19, 219, 96);
   font-size: 30px;
 }
-/* .menu-toggle {
-  display: block;
-  margin: auto;
-  padding: 0 3rem;
-}
 
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #39aa3b;
-  margin: 4px 0;
-
-}
-.nav-link {
-  transition: 0.7s ease-out;
-}
-.nav-menu.active {
-  left: 0;
-}
-.nav-link:hover {
-  color: dodgerblue;
-  font-size: 30px;
-}
-.nav-menu {
-  position: absolute;
-  left: -100%;
-  top: 100px;
-  background-color: #fff;
-  width: 100%;
-  text-align: center;
-  transition: 0.3s;
-}
-.nav-menu {
-  display: none;
-}
-
-.nav-menu.active {
-  display: block;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 22px;
-}
-
-nav li {
-  padding: 7px;
-}
-
-nav a {
-  color: #39aa3b;
-  text-decoration: none;
-  font-weight: bold;
-} */
-
-/* ######################## hero section ################*/
+/* ######################## Hero section ################*/
 .hero {
   background-size: cover;
   background-position: center;
@@ -171,11 +119,11 @@ h3 {
   box-shadow: 0 2px 5px 0 #000;
 }
 
-/* ################Services##################### */
+/* ################ Services ##################### */
 
 .landscaping-services {
   /* background-color: #eaf6f6; */
-  padding: 50px 0;
+  padding: 50px 10px;
   text-align: center;
 }
 
@@ -206,24 +154,22 @@ h3 {
   color: #39aa3b;
 }
 
-/* #################### Contact ################### */
-
-.container {
-  padding: 120px 10px;
-}
+/* #################### Contact Page ################### */
 
 .contact {
   background-color: #f9f9f9;
   text-align: center;
+  padding: 120px 15px 30px;
 }
 
 .contact h2 {
   color: #39aa3b;
   font-size: 36px;
+  padding: 10px;
 }
 
 .contact p {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 30px;
 }
 
@@ -283,7 +229,7 @@ button[type="submit"]:hover {
   padding: 5px;
 }
 
-/* ######################Gallery#################### */
+/* ###################### Gallery Section #################### */
 
 .gallery img {
   width: 100%;
@@ -332,7 +278,7 @@ button[type="submit"]:hover {
   border-radius: 5px;
 }
 
-/* ########################footer####################### */
+/* ######################## Footer ####################### */
 
 /* Style the footer */
 footer {
@@ -367,4 +313,78 @@ footer {
 .social p,
 .contact-footer p {
   padding: 7px;
+}
+
+/* ######################## About Page ##################### */
+
+/* Styles for the About Us section */
+.about {
+  background-color: #f9f9f9;
+  padding: 5% 0; /* Adjust the top and bottom padding as needed */
+  text-align: center;
+}
+
+.about h2 {
+  color: #39aa3b;
+  font-size: 35px; /* Adjust the font size as needed */
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 20px; /* Adjust the font size as needed */
+  margin-bottom: 20px;
+  line-height: 1.5; /* Adjust the line height for readability */
+}
+
+/* Customize other styles such as fonts, colors, and margins as needed */
+
+/* Styles for the grid container */
+.grid-container {
+  display: block;
+  padding: 100px 20px 20px; /* Add padding to the container as needed */
+}
+
+/* Styles for the About Us section (left column) */
+.about {
+  background-color: #f9f9f9;
+  padding: 5%;
+  text-align: center;
+}
+
+.quote .phone-number,
+.quote p {
+  color: #fff;
+  padding: 10px;
+  font-size: 23px;
+}
+
+.quote {
+  margin: auto;
+  background-color: black;
+  padding: 5%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.quote h2 {
+  font-size: 35px; /* Adjust the font size as needed */
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.quote .contact-link {
+  display: inline-block;
+  background-color: #fff;
+  color: #39aa3b;
+  padding: 20px 35px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 30px;
+}
+
+.quote .contact-link:hover {
+  background-color: #39aa3b;
+  color: white;
 }

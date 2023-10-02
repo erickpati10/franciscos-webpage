@@ -13,7 +13,7 @@
     padding: 10px;
   }
 
-  /* ####################Hamburger menu button ######################*/
+  /* #################### Hamburger menu button ######################*/
   a {
     color: #39aa3b;
   }
@@ -238,6 +238,9 @@
   }
 
   /* ################Gallery##################### */
+  .photos-gallery {
+    padding-top: 120px;
+  }
 
   .gallery img {
     width: 100%;
@@ -281,5 +284,14 @@
     width: 100%;
     padding-bottom: 15px;
     border-radius: 5px;
+  }
+
+  /* ######################## About Page ##################### */
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    gap: 20px; /* Adjust the gap between columns */
+    padding: 20px; /* Add padding to the container as needed */
   }
 }
