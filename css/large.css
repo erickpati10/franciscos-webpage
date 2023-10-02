@@ -137,6 +137,9 @@
     text-align: center;
     background-blend-mode: multiply;
   }
+  .container {
+    opacity: 4;
+  }
 
   .contact h2 {
     color: #fff;
@@ -235,13 +238,12 @@
     box-shadow: 0 0 40px rgba(0, 0, 0, 5);
     background-image: url("../images/Gallery-5.jpg");
     background-size: cover;
-    background-blend-mode: lighten;
+    background-blend-mode: multiply;
   }
 
   .landscaping-services .service h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #4f130b;
   }
 
   /* ################Gallery##################### */
