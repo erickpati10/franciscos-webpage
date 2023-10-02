@@ -130,20 +130,24 @@
   /* ++++++++++++++++++++++++ contact ++++++++++++++++++++++++++ */
 
   .contact {
+    background-image: url("../images/Gallery-5.jpg");
+    background-size: cover;
     background-color: #f9f9f9;
     padding: 10%;
     text-align: center;
+    background-blend-mode: multiply;
   }
 
   .contact h2 {
-    color: #39aa3b;
+    color: #fff;
     font-size: 36px;
     margin-bottom: 20px;
   }
 
   .contact p {
-    font-size: 18px;
+    font-size: 25px;
     margin-bottom: 30px;
+    color: #0717a1;
   }
 
   /* Contact Form Styles */
@@ -154,8 +158,9 @@
 
   label {
     display: block;
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 8px;
+    color: #0717a1;
   }
 
   input[type="text"],
@@ -194,15 +199,17 @@
     margin-bottom: 20px;
   }
 
-  .contact-info p {
+  .contact-info p,
+  .contact-info a {
     margin: 5px 0;
+    color: #0717a1;
   }
 
   .contact-info strong {
     font-weight: bold;
   }
 
-  /* ################Services##################### */
+  /* ################ Services ##################### */
 
   .landscaping-services {
     display: inline-flex;
