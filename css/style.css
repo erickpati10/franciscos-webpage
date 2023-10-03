@@ -56,15 +56,18 @@ a {
   position: fixed;
   left: -100%;
   top: 100px;
-  gap: 0;
-  flex-direction: column;
-  background-color: #262626;
+  /* gap: 0; */
+  /* flex-direction: column; */
+  background-color: #0e1539;
   width: 100%;
   text-align: center;
   transition: 0.3s;
+  opacity: 0.9;
+  height: 100%;
 }
 .nav-item {
-  margin: 16px 0;
+  margin: 30px;
+  font-size: 40px;
 }
 .nav-menu.active {
   left: 0;
