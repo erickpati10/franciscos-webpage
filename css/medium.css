@@ -1,0 +1,59 @@
+@media screen and (min-width: 35em) {
+  /* #################### Button ################# */
+
+  .button h2,
+  h3 {
+    color: #39aa3b;
+    font-size: 37px;
+  }
+  .button a {
+    font-size: 25px;
+  }
+
+  /* ################ Services ##################### */
+
+  .landscaping-services .service {
+    max-width: 500px;
+  }
+
+  .landscaping-services .service h3 {
+    font-size: 32px;
+  }
+
+  .service p {
+    font-size: 20px;
+  }
+
+  /* ###################### Gallery Section #################### */
+
+  .gallery .heading {
+    width: 75%;
+  }
+
+  .gallery .heading h3 {
+    font-size: 40px;
+  }
+
+  /* ######################## Footer ####################### */
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    justify-content: center;
+    gap: 50px;
+    padding: 25px;
+  }
+
+  /* #################### Contact Page ################### */
+
+  .contact {
+    padding: 120px 70px 30px;
+  }
+
+  /* ######################## About Page ##################### */
+
+  .quote {
+    background-color: #415563;
+  }
+}
