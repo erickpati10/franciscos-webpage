@@ -5,20 +5,19 @@
 }
 
 header {
-  position: fixed;
+  position: sticky;
   background-color: white;
   top: 0;
   width: 100%;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  color: #39aa3b;
-  padding: 10px;
+  display: flex;
+  padding: 10px 0px 10px 15%;
   text-align: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 5);
 }
 
-header h1 {
+.company-name h1 {
   display: none;
+  color: #39aa3b;
 }
 
 /* ######################### Hamburger menu ##################### */
@@ -33,9 +32,6 @@ a {
 
 .navbar {
   margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .bar {
@@ -74,12 +70,30 @@ a {
 }
 
 .nav-link {
+  position: relative;
   transition: 0.7s ease-out;
 }
 
 .nav-link:hover {
   color: rgb(19, 219, 96);
   font-size: 30px;
+}
+
+.nav-link::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #1bd9a3;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  opacity: 0;
+  transition: all 0.5s;
+  pointer-events: none;
+}
+.nav-link:hover::after {
+  opacity: 1;
+  width: 100%;
 }
 
 /* ######################## Hero section ################*/
@@ -89,7 +103,7 @@ a {
   background-position: center;
   color: #fff;
   padding: 25% 0;
-  border-radius: 25% 0;
+  border-radius: 0px 0px 25% 0;
 }
 .hero-banner h1,
 .hero-banner p,
@@ -187,7 +201,7 @@ a {
 }
 
 .landscaping-services .service h3,
-service p {
+.service p {
   font-size: 24px;
   margin-bottom: 10px;
   color: #39aa3b;
@@ -219,6 +233,7 @@ service p {
 .container {
   background-color: rgba(255, 255, 255, 0.85);
   padding: 10px;
+  border-radius: 25px;
 }
 
 .contact h2 {
