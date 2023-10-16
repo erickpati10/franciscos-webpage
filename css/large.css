@@ -14,8 +14,9 @@
   }
 
   /* #################### Hamburger menu button ######################*/
-  a {
+  .navbar .nav-menu .nav-item a {
     color: #39aa3b;
+    text-decoration: none;
   }
 
   .navbar {
@@ -25,6 +26,11 @@
     align-items: center;
     padding: 0 24px;
     margin: auto;
+  }
+  */ .navbar .nav-menu .nav-item {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
   }
 
   .nav-menu {
@@ -47,13 +53,17 @@
     display: none;
     cursor: pointer;
   }
+  /* ################################## HERO SECTION ############################### */
 
   .hero {
+    background-image: url("../images/hero-image-F.jpg");
     background-size: cover;
     background-position: center;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     color: #fff;
-    padding: 100px 0;
+    padding: 25% 0;
+    border-radius: 25% 0;
   }
 
   .hero img {
@@ -61,21 +71,52 @@
     object-fit: cover;
   }
 
-  .hero h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
+  .hero-banner h1,
+  .hero-banner p,
+  .hero-btn {
+    width: 50%;
+    font-size: 40px;
+    color: #72b805;
+    padding: 20px;
+    text-align: center;
   }
+
+  .hero-btn {
+    display: block;
+  }
+
+  .hero-btn a {
+    padding: 15px;
+    background-color: rgb(16, 10, 212);
+    border-radius: 25px;
+  }
+
+  .hero-btn a:hover {
+    background-color: #39aa3b;
+  }
+  .hero-banner p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+  }
+
+  /* ############################## BUTTON SECTION ######################## */
 
   .button {
     float: left;
     width: 100%;
     text-align: center;
     margin-bottom: 17px;
+    padding-top: 10%;
   }
-  .button a {
+  .quote-btn {
+    padding: 50px;
+  }
+
+  .quote-btn a {
     display: inline-block;
-    padding: 12px 31px;
-    background: black;
+    padding: 30px 40px;
+    background: rgb(10, 10, 221);
     color: #fff;
     font-size: 60px;
     margin: 40px 0;
@@ -90,7 +131,21 @@
     font-size: 60px;
   }
 
-  /* ########################### footer ######################*/
+  .type-business {
+    padding: 35px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .type-business img {
+    border-radius: 25%;
+    height: 150px;
+    padding: 10px;
+    background-color: green;
+  }
+
+  /* ########################### FOOTER SECTION ######################*/
+
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -135,7 +190,7 @@
   /* ++++++++++++++++++++++++ contact ++++++++++++++++++++++++++ */
 
   .contact {
-    background-image: url("../images/Gallery-5.jpg");
+    background-image: url("../images/hero-image-F.jpg");
     background-size: cover;
     background-color: #f9f9f9;
     padding: 10%;
@@ -143,11 +198,12 @@
     background-blend-mode: multiply;
   }
   .container {
-    opacity: 4;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
   }
 
   .contact h2 {
-    color: #fff;
+    color: #39aa3b;
     font-size: 36px;
     margin-bottom: 20px;
   }
@@ -155,7 +211,7 @@
   .contact p {
     font-size: 25px;
     margin: 30px 30px;
-    color: #030406;
+    color: #39aa3b;
   }
 
   /* Contact Form Styles */
@@ -168,7 +224,7 @@
     display: block;
     font-size: 22px;
     margin-bottom: 8px;
-    color: #030406;
+    color: #39aa3b;
   }
 
   input[type="text"],
@@ -210,7 +266,7 @@
   .contact-info p,
   .contact-info a {
     margin: 5px 0;
-    color: #030406;
+    color: #39aa3b;
   }
 
   .contact-info strong {
@@ -229,21 +285,6 @@
   .landscaping-services h2 {
     font-size: 36px;
     margin-bottom: 20px;
-  }
-
-  .landscaping-services .service {
-    margin: 0 auto;
-    color: #10112c;
-    max-width: 400px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    background-color: #94cf91;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 5);
-    background-image: url("../images/Gallery-5.jpg");
-    background-size: cover;
-    background-blend-mode: multiply;
   }
 
   .landscaping-services .service h3 {

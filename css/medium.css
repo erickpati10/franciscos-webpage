@@ -6,8 +6,12 @@
     color: #39aa3b;
     font-size: 37px;
   }
-  .button a {
+  .quote-btn a {
     font-size: 25px;
+  }
+
+  .type-business {
+    justify-content: space-evenly;
   }
 
   /* ################ Services ##################### */
