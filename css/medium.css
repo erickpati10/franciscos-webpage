@@ -16,16 +16,11 @@
 
   /* ################ Services ##################### */
 
-  .landscaping-services .service {
-    max-width: 500px;
-  }
-
-  .landscaping-services .service h3 {
-    font-size: 32px;
-  }
-
-  .service p {
-    font-size: 20px;
+  .landscaping-services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
   }
 
   /* ###################### Gallery Section #################### */
