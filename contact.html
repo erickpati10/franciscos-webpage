@@ -58,15 +58,21 @@
               <strong>Mobile:</strong
               ><a href="tel:+14094446710"> (409) 444-6710 (English)</a>
             </p>
-            <!-- <p><strong>Email:</strong> info@example.com</p> -->
           </div>
           <!-- Contact Form -->
-          <form action="submit_contact_form.php" method="POST">
+          <form
+            action="https://formspree.io/f/xjvqjqqb"
+            method="POST"
+            id="my-form"
+          >
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required />
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required />
 
             <label for="message">Job Description:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
@@ -74,6 +80,7 @@
             <button type="submit">Submit</button>
           </form>
         </div>
+        <div id="status"></div>
       </section>
     </main>
     <footer>
@@ -97,5 +104,6 @@
       </section>
     </footer>
     <script src="script/button.js"></script>
+    <script src="script/form.js"></script>
   </body>
 </html>

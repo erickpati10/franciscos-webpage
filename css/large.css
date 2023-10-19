@@ -276,6 +276,17 @@
     font-weight: bold;
   }
 
+  #status.success {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 15px;
+  }
+
+  #status.error {
+    font-size: 32px;
+    padding: 15px;
+  }
+
   /* ################ Services ##################### */
 
   .landscaping-services {

@@ -348,6 +348,39 @@ button[type="submit"]:hover {
   padding: 5px;
 }
 
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+#status.success {
+  color: #fff;
+  background: rgb(15, 219, 155);
+  animation: status 4s ease delay forwards;
+}
+#status.error {
+  background: rgb(232, 7, 7);
+  color: #fff;
+  animation: status 4s ease delay forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
 /* ###################### Gallery Section #################### */
 
 .gallery img {
