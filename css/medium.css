@@ -1,11 +1,16 @@
 @media screen and (min-width: 35em) {
   /* #################### Button ################# */
 
+  .button {
+    margin: 20% 5% 10px;
+  }
+
   .button h2,
   h3 {
     color: #39aa3b;
     font-size: 37px;
   }
+
   .quote-btn a {
     font-size: 25px;
   }
@@ -14,13 +19,20 @@
     justify-content: space-evenly;
   }
 
+  /* ######################### Hamburger menu ##################### */
+
+  .nav-item {
+    margin: 50px;
+    font-size: 50px;
+  }
+
   /* ################ Services ##################### */
 
   .landscaping-services {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    justify-content: center;
   }
 
   /* ###################### Gallery Section #################### */
@@ -31,6 +43,16 @@
 
   .gallery .heading h3 {
     font-size: 40px;
+  }
+
+  /* ######################## Services Type ##################### */
+
+  .service-type {
+    padding: 15%;
+  }
+
+  .service-type h3 {
+    font-size: 45px;
   }
 
   /* ######################## Footer ####################### */

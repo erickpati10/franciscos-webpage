@@ -70,7 +70,7 @@ a {
   height: 100%;
 }
 .nav-item {
-  margin: 30px;
+  margin: 45px;
   font-size: 40px;
 }
 .nav-menu.active {
@@ -146,7 +146,7 @@ a {
 
 .button {
   text-align: center;
-  margin: 35px 10px;
+  margin: 30% 5% 10px;
 }
 .button h2 {
   color: #39aa3b;
@@ -182,6 +182,10 @@ a {
 }
 
 /* ################ Services ##################### */
+
+.landscaping-services {
+  padding-bottom: 20%;
+}
 
 .card-container {
   width: 350px;
@@ -224,6 +228,7 @@ a {
   text-align: center;
   margin-top: 50%;
   background-color: rgba(255, 255, 255, 0.85);
+  color: #39aa3b;
 }
 
 .front {
@@ -257,6 +262,27 @@ a {
 .back p {
   color: #39aa3b;
   font-size: 22px;
+}
+
+/* ######################## Services Type ##################### */
+
+.service-type {
+  text-align: center;
+  padding: 30% 20px 15%;
+  width: 100%;
+}
+
+.service-type h3 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #222;
+  color: #39aa3b;
+}
+
+.service-type h3 span {
+  font-weight: 100;
+  color: #39aa3b;
 }
 
 /* #################### Contact Page ################### */
@@ -406,10 +432,12 @@ button[type="submit"]:hover {
   font-weight: bold;
   padding-bottom: 10px;
   border-bottom: 3px solid #222;
+  color: #39aa3b;
 }
 
 .gallery .heading h3 span {
   font-weight: 100;
+  color: #39aa3b;
 }
 
 .gallery .container {
